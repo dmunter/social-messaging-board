@@ -1,0 +1,23 @@
+.btn-before:hover {
+content: '';
+display: block;
+position: absolute;
+width: 40px;
+height: 40px;
+top:10px;
+-webkit-transition: opacity .3s, -webkit-transform .3s;
+transition: opacity .3s, -webkit-transform .3s;
+transition: opacity .3s, transform .3s;
+transition: opacity .3s, transform .3s, -webkit-transform .3s;
+-webkit-animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+background-color: white;
+border-radius: 20px;
+z-index: 1;
+overflow: visible;
+}
+
+.btn-after:hover{
+    top: 10px;
+    position: absolute;
+}
